@@ -1,0 +1,325 @@
+@media (min-width: 700px) {
+  .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Grid Layout -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+/* General ----------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "beyno";
+  src: url("fonts/beyno-webfont.woff2") format("woff2"),
+    url("fonts/beyno-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: url("images/rm21-wood-ae-52-k.jpg");
+}
+ul {
+  margin: 0;
+}
+
+/*---- NavBar & Burger Menu Animation ----*/
+
+nav {
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 10vh;
+  background: #080808;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  opacity: 95%;
+  box-shadow: 0 0 10px 2px #d60000;
+  top: 0;
+}
+#navbar {
+  position: sticky;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-links li a:hover {
+  text-decoration: 3px underline;
+  text-decoration-color: #d60000cb;
+  text-shadow: 0px 0px 5px #d60000;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links #logoItem {
+  align-self: center;
+  order: 1;
+}
+.nav-links #releaseItem {
+  align-self: center;
+  order: 2;
+  font-family: "Odibee Sans", cursive;
+}
+.nav-links #contactItem {
+  align-self: center;
+  order: 0;
+  font-family: "Odibee Sans", cursive;
+}
+#logo {
+  font-family: "beyno";
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+    z-index: 3;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    z-index: 0;
+    background: #212121;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -40%);
+    -webkit-clip-path: circle(100px at 90% -40%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to bottom right,
+      #212121,
+      #d60000,
+      #212121
+    );
+  }
+  .nav-links.closed {
+    visibility: hidden;
+  }
+  .nav-links.open {
+    clip-path: circle(2000px at 90% -40%);
+    -webkit-clip-path: circle(2000px at 90% -40%);
+    pointer-events: all;
+    top: 0;
+    opacity: 1;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+/*---- Banners/Hero Images ----*/
+
+.djBanner {
+  display: grid;
+  height: 80vh;
+  margin-bottom: 30px;
+  padding: 2rem;
+  color: white;
+  background: url("images/aliane-schwartzhaupt-35cdgbFPQCs-unsplash.jpg") center
+    #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+  box-shadow: 0 0 10px 5px #000000;
+  border: 2px solid black;
+}
+.crowd {
+  display: grid;
+  height: 80vh;
+  margin-bottom: 30px;
+  padding: 2rem;
+  color: white;
+  background: url("images/a-l-ya631mqQ7Ng-unsplash.jpg") center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+  box-shadow: 0 0 10px 5px #000000;
+  border: 2px solid black;
+}
+.banner-text {
+  justify-self: center;
+  align-self: start;
+  font-family: "beyno";
+  font-size: 10vw;
+  text-shadow: 0 8px 5px black;
+  height: 25vh;
+  width: 25vw;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-text {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 1440px) {
+  .banner-text {
+    font-size: 5vw;
+  }
+}
+
+/*---- Music Boxes ----*/
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+  border-radius: 5%;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 5px #000000;
+}
+
+.article-title {
+  position: absolute;
+  text-align: center;
+  letter-spacing: 1.5px;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  font-family: "Odibee Sans", cursive;
+  font-weight: 400;
+  color: white;
+  border: 1px solid black;
+  border-top: 0 !important;
+  box-shadow: 0 0 10px 5px #000000;
+  text-shadow: 0 8px 5px black;
+  background-color: #212121;
+  transition: all 0.2s ease-in-out;
+}
+.article-title:hover {
+  text-decoration: underline white;
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, black, #d60000, black);
+}
+.mbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#music {
+  font-family: "Odibee Sans", cursive;
+  color: white;
+  justify-self: center;
+  align-self: start;
+  font-size: 5vw;
+  text-shadow: 0 8px 5px black;
+}
+@media (min-width: 600px) {
+  #music {
+    font-size: 7vw;
+  }
+}
+@media (min-width: 300px) {
+  #music {
+    font-size: 10vw;
+  }
+}
+@media (min-width: 700px) {
+  #music {
+    font-size: 10vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #music {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 1440px) {
+  #music {
+    font-size: 5vw;
+  }
+}
+
+main {
+  min-height: 100vh;
+  z-index: 1;
+  position: relative;
+  background-image: url("images/rm21-wood-ae-52-k.jpg");
+}
+/*---- The Footer ----*/
+
+footer {
+  display: grid;
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  place-content: center;
+  color: #fff;
+  background: #000;
+  padding: 4em 0;
+  background-image: url("images/rm21-wood-ae-52-k.jpg");
+}
+
+/* Will continue Later Today*/
