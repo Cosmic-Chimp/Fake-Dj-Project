@@ -91,10 +91,31 @@ nav {
 
 @media screen and (max-width: 768px) {
   .line {
+    position: absolute;
     width: 30px;
     height: 3px;
     background: white;
     margin: 5px;
+    border-radius: 15%;
+    transition: all cubic-bezier(0.5, 0.1, 1, 1) 0.25s;
+  }
+  .top {
+    top: 20%;
+  }
+  .middle {
+    top: 30%;
+  }
+  .bottom {
+    top: 40%;
+  }
+  .icon.close .top {
+    transform: rotate(45deg);
+    top: 30%;
+  }
+  .icon.close .middle,
+  .icon.close .bottom {
+    transform: rotate(-45deg);
+    top: 30%;
   }
   nav {
     position: relative;
@@ -102,12 +123,18 @@ nav {
   }
 
   .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     cursor: pointer;
     right: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 2;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
   }
 
   .nav-links {
