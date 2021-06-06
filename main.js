@@ -12,11 +12,11 @@ hamburger.addEventListener("click", () => {
 });
 
 /// Attempt at onclick close ///
-
+/*
 const burgerAnchors = document.querySelector("nav-links.open");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("closed");
 })
-
+*/
 ///   Closes visible menu,but not on click -> Ask Chris ///
