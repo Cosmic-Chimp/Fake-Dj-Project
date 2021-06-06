@@ -22,14 +22,14 @@
       </script>
       <script type="text/javascript">
         $(".hamburger").click(function(){
-          $(".icon").toggleClass("close");
+          toggleMenu();
         });
       </script>
 
       <ul class="nav-links">
-        <li id="logoItem"><a href="#Enigma"><h2 id="logo">Enigma</h2></a></li>
-        <li id="releaseItem"><a href="#music">Releases</a></li>
-        <li id="contactItem"><a href="#contact">Contact</a></li>
+        <li onclick="toggleMenu();" id="logoItem"><a href="#Enigma"><h2 id="logo">Enigma</h2></a></li>
+        <li onclick="toggleMenu();" id="releaseItem"><a href="#music">Releases</a></li>
+        <li onclick="toggleMenu();" id="contactItem"><a href="#connect">Connect</a></li>
       </ul>
     </nav>
     <br>
@@ -95,11 +95,12 @@
     </div>
     </main>
           <!-- Still Need to add a few things -->
+          <h3 id="connect"></h3>
     <footer>
       <div class="footer">
         <h3>Connect</h3>
         <br>
-        <p>addres</p>
+        <p>social media</p>
         <p>email</p>
         <p>number</p>
       </div>

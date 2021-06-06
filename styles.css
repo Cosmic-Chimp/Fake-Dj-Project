@@ -42,7 +42,7 @@ nav {
   align-content: center;
   height: 10vh;
   background: #080808;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   width: 100%;
   opacity: 95%;
   box-shadow: 0 0 10px 2px #d60000;
@@ -95,18 +95,17 @@ nav {
     width: 30px;
     height: 3px;
     background: white;
-    margin: 5px;
     border-radius: 15%;
     transition: all cubic-bezier(0.5, 0.1, 1, 1) 0.25s;
   }
   .top {
-    top: 20%;
+    top: 25%;
   }
   .middle {
-    top: 30%;
+    top: 50%;
   }
   .bottom {
-    top: 40%;
+    top: 75%;
   }
   .icon.close .top {
     transform: rotate(45deg);
@@ -123,18 +122,18 @@ nav {
   }
 
   .hamburger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
+    right: 0;
+    top: 5vh;
+    margin-right: 0;
     transform: translate(-5%, -50%);
     z-index: 2;
     padding: 5px;
-    height: 100px;
-    width: 100px;
+    height: 3rem;
+    width: 5rem;
+    display: grid;
+    place-items: center;
+    justify-content: center;
   }
 
   .nav-links {
@@ -342,11 +341,24 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  place-content: center;
+  justify-content: center;
+  justify-items: start;
   color: #fff;
   background: #000;
   padding: 4em 0;
   background-image: url("images/rm21-wood-ae-52-k.jpg");
 }
 
-/* Will continue Later Today*/
+/* Will continue */
+
+footer h3 {
+  justify-self: center;
+  align-self: start;
+  font-family: "Odibee Sans", cursive;
+  font-size: 50px;
+  text-shadow: 0 8px 5px black;
+}
+footer p {
+  font-family: "Odibee Sans", cursive;
+  font-size: 30px;
+}
