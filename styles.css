@@ -175,13 +175,13 @@ nav {
     font-size: 25px;
   }
   .nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
+    transition: all 0.3s ease-in 0.5s;
   }
   .nav-links li:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
+    transition: all 0.3s ease-in 0.6s;
   }
   .nav-links li:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
+    transition: all 0.3s ease-in 0.4s;
   }
   li.fade {
     opacity: 1;
@@ -235,16 +235,28 @@ nav {
   .leading-bigtext {
     font-size: 3rem;
   }
+  .banner-text {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: 1024px) {
   .banner-text {
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1440px) {
   .banner-text {
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 /*Iphone 4 portrait*/
