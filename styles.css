@@ -40,7 +40,6 @@ nav {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 10vh;
   background: #080808;
   padding: 0.5rem 0rem;
   width: 100%;
@@ -50,6 +49,7 @@ nav {
 }
 #navbar {
   position: sticky;
+  height: 10vh;
 }
 .nav-links {
   display: flex;
@@ -126,6 +126,7 @@ nav {
     right: 0;
     top: 5vh;
     margin-right: 0;
+    margin-top: 5px;
     transform: translate(-5%, -50%);
     z-index: 2;
     padding: 5px;
@@ -191,6 +192,7 @@ nav {
 
 .djBanner {
   display: grid;
+  grid-gap: 0px;
   height: 80vh;
   margin-bottom: 30px;
   padding: 2rem;
@@ -217,29 +219,81 @@ nav {
   border: 2px solid black;
 }
 .banner-text {
-  justify-self: center;
-  align-self: start;
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  align-items: center;
+  margin: none;
   font-family: "beyno";
-  font-size: 10vw;
+  font-size: 3rem;
   text-shadow: 0 8px 5px black;
-  height: 25vh;
-  width: 25vw;
+  /*height: 25vh;
+  width: 25vw; */
 }
 
 @media (min-width: 700px) {
   .leading-bigtext {
-    font-size: 5vw;
+    font-size: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .banner-text {
-    font-size: 5vw;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1440px) {
   .banner-text {
-    font-size: 5vw;
+    font-size: 3rem;
+  }
+}
+/*Iphone 4 portrait*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .hamburger {
+    margin: 0;
+  }
+}
+
+/*Iphone 4 landscape*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  nav#navbar {
+    height: 15vh;
+  }
+  .hamburger {
+    margin-top: 5px;
+  }
+}
+/*Iphone 5 landscape*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  nav#navbar {
+    height: 15vh;
+  }
+  .hamburger {
+    margin-top: 5px;
+  }
+}
+/*Iphone 6/7/8 landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  nav#navbar {
+    height: 15vh;
+  }
+  .hamburger {
+    margin-top: 5px;
+  }
+}
+/*Iphone 6/7/8 +'s landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  nav#navbar {
+    height: 15vh;
+  }
+  .hamburger {
+    margin-top: 5px;
+  }
+}
+/*Iphone x  landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  nav#navbar {
+    height: 15vh;
   }
 }
 
