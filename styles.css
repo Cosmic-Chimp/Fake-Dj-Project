@@ -63,6 +63,7 @@ nav {
   text-decoration: 3px underline;
   text-decoration-color: #d60000cb;
   text-shadow: 0px 0px 5px #d60000;
+  cursor: pointer;
 }
 
 .nav-links li {
@@ -154,9 +155,6 @@ nav {
       #d60000,
       #212121
     );
-  }
-  .nav-links.closed {
-    visibility: hidden;
   }
   .nav-links.open {
     clip-path: circle(2000px at 90% -40%);
