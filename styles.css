@@ -63,7 +63,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-.nav-links li:hover {
+.nav-links li a:hover {
   text-decoration: 3px underline;
   text-decoration-color: #d60000cb;
   text-shadow: 0px 0px 5px #d60000;
