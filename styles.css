@@ -5,6 +5,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* Grid Layout -------------------------------------------------*/
 .cards {
   display: grid;
