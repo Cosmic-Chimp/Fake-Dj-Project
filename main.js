@@ -21,7 +21,15 @@ let toggleMenu = () => {
   //alert("hallo");
   $(".icon").toggleClass("close");
   navLinks.classList.toggle("open");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
+  // links.forEach(link => {
+  //   link.classList.toggle("fade");
+  // });
 };
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
