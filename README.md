@@ -1,4 +1,4 @@
-# CSS-Grid-Practise
+# Fake-Dj-Project
 
 
 > This is a project I decided to do in order to practise my CSS-Grid skills
